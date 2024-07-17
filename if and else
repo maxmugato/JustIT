@@ -1,0 +1,209 @@
+These are useful codes (they are all correct I think, which the teacher already resolved) which show how if and else statements work.
+
+
+// Activity 2: Debugging Challenge
+
+// Objective: Develop your debugging skills by identifying and correcting errors in given JavaScript code snippets. This activity encourages attention to detail and reinforces your understanding of JavaScript syntax and logic.
+
+
+// Tasks: You are provided with 20 code snippets, each containing one or more errors. These errors may include syntax mistakes, logic flaws, misspellings, or missing elements. Your challenge is to fix these errors to make the code run as intended.
+
+
+// Instructions:
+
+// Carefully read each snippet and identify the errors.
+// Correct the errors in each snippet. Remember, there may be multiple issues in a single snippet.
+// Test your corrected code to ensure it behaves as expected.
+// Pay close attention to details such as spelling, proper use of operators, correct use of conditional statements, and adherence to JavaScript syntax.
+
+
+// Snippet 1
+// if (age > 18) {
+//     console.log("You are an adult.");
+// } else {
+//     console.log("You are a minor.");
+// }
+
+// Snippet 2
+// let score = 85
+
+// if (score >= 60) {
+//     console.log("Passed");
+// } else {
+//     console.log("Failed");
+// };
+// // Snippet 3
+
+// let temperature = 25;
+// if (temperature > 30) {
+//     console.log("It's hot outside");
+// } else {
+//     console.log("It's cool outside");
+// }
+
+// // Snippet 4
+
+// let username = 'admin';
+
+// if (username = 'admin') {
+//     console.log("Access granted");
+// } else {
+//     console.log("Access denied");
+// }
+
+// // Snippet 5
+
+// let light = 'green';
+
+// if (light == "green"){
+//     console.log("Go");
+
+// } else if  (light == "red") {
+//     console.log("Stop");
+
+// } else { 
+//     console.log("Slow down");
+// }
+// // Snippet 6
+
+
+// let waterTemperature = 80
+
+// if (waterTemperature < 0){ 
+//     console.log("Solid");
+
+// } else if (waterTemperature > 100) { 
+//     console.log("Gas");
+
+// } else { 
+//     console.log("Liquid");}
+
+// // Snippet 7
+
+// let ageForDriving = 20;
+
+// if (ageForDriving >= 16) {
+//     console.log("Can drive");
+// } else {
+//     console.log("Cannot drive");
+// }
+
+// // Snippet 8
+// let operation = 'add';
+// let number1 = 5, number2 = 7;
+
+// if (operation == "add") {
+//     console.log(number1 + number2);
+// } else if (operation == "subtract") {
+//     console.log(number1 - number2);
+// } else {
+//     console.log("Operation not recognized");
+// }
+
+// // Snippet 9
+
+// let customerAge = 65;
+
+// if (customerAge > 60) {
+//     console.log("Eligible for discount");
+// } else {
+//     console.log("Not eligible for discount");
+// }
+
+// // Snippet 10
+
+let day = "Monday";
+
+if (day ==- "Saturday" || day ==- "Sunday") {
+    console.log("It's weekend!");
+} else {
+    console.log("It's a weekday.");
+}
+
+// // Snippet 11
+// let mood = "happy";
+// if mood == "happy" {
+//     console.log("It's a great day!");
+// } else {
+//     console.log("Hope things get better!");
+
+// // Snippet 12
+// let weather = "sunny";
+// if (weather == "rainy") {
+//     console.log("Don't forget an umbrella.");
+// else
+//     console.log("Wear sunglasses.");
+
+// // Snippet 13
+// let number = 10;
+// if (number % 2 = 0) {
+//     console.log("Even");
+// else
+//     console.log("Odd");
+
+// // Snippet 14
+// let loggedIn = true;
+// if (loggedIn = false) {
+//     console.log("Welcome back!");
+// } else {
+//     console.log("Please log in.");
+
+// // Snippet 15
+// let grade = 87;
+// if (grade >= 90) {
+//     console.log("A");
+// else if (grade >= 80) {
+//     console.log("B");
+// else if (grade >= 70) {
+//     console.log("C");
+// else if (grade >= 60) {
+//     console.log("D");
+// } else {
+//     console.log("F");
+
+// // Snippet 16
+// let speed = 55;
+// if (speed > 60)
+//     console.log("Too fast");
+// } elseif (speed < 40) {
+//     console.log("Too slow");
+// else {
+//     console.log("Good speed");
+
+// // Snippet 17
+// let meal = "lunch";
+// if (meal == "breakfast") {
+//     console.log("Good morning!");
+// } else if (meal = "lunch") {
+//     console.log("Good afternoon!");
+// } else if (meal == "dinner") {
+//     console.log("Good evening!");
+// } else {
+//     console.log("Hello!");
+
+// // Snippet 18
+// let pets = 2;
+// if (pets > 3) {
+//     console.log("You have many pets");
+// else
+//     console.log("Not too many pets");
+
+// // Snippet 19
+// let hoursSlept = 8;
+// if (hoursSlept < 7)
+//     console.log("You might be tired today.");
+// } else if (hoursSlept > 9) {
+//     console.log("You got plenty of sleep!");
+// } else {
+//     console.log("That's a healthy amount of sleep.");
+
+// // Snippet 20
+// let ageCheck = 21;
+// if (ageCheck < 18) {
+//     console.log("You're a minor.");
+// else if (ageCheck > 18) {
+//     console.log("You're an adult.");
+// } else {
+//     console.log("Happy 18th birthday!");
+// }
+ 
