@@ -1,0 +1,119 @@
+// Useful code
+
+
+///////////////////// DEBUG ACTIVITY ////////////////////
+
+// Activity 1: Word Blender
+// function combineWord(word1, word2) {
+//     return word1 + " " + word2; 
+// }
+// console.log(combineWord("Hello", "Sweetie"))
+
+
+// // Activity 2: Basic Calculator
+// function add(a, b) {
+//   return a + b
+// }
+// console.log(add(2,5));
+
+
+// function subtract(a, b) {
+//   return a - b;
+// };
+
+// function multiply(a, b) { 
+//   return a * b;
+// };
+
+// function divide() { 
+//   return a / b; 
+// };
+
+// // Activity 3: Weather Forecaster
+
+// function celsiusToFahrenheit(celsius) {
+//   return (celsius * 9/5) + 32;
+// };
+
+// console.log(celciusToFahrenheit(31))
+
+// // Activity 4: Blast Off!
+
+// function startCountdown(number) {
+//   for (let i = number; i >= 0; i--) { 
+//     console.log(i);
+//   }
+//   console.log("Blast off!");
+// };
+
+// startCountdown(10);
+
+// // Activity 5: Age Teller
+
+// function calculateAge(birthYear) {
+//   const currentYear = new Date().getFullYear(); 
+//   return currentYear - birthYear;
+// }
+
+// console.log(calculateAge(1987))
+
+// // Activity 6: The Extremes
+
+// numbers = [1,2,3,4,5,6]
+
+// function findMin(numbers) {
+//   return Math.min(...numbers)
+// }
+
+// console.log(findMin(numbers))
+
+// function findMax(numbers) {
+//   return Math.max(...numbers)
+// }
+// console.log(findMax(numbers))
+
+// // Activity 7: Length Matters
+
+// function isLongerThan(string, length) {
+//   return string.length > length; 
+
+// }
+
+// console.log(isLongerThan("hello", 3))
+
+// // Activity 8: Vowel Counter
+
+// function countVowels(string) {
+//   const vowels = string.match(/[aeiou]/gi);
+//   return vowels ? vowels.length : 0; 
+// }
+
+// console.log(countVowels("Supercalifragilisticexpealedocious"))
+
+// // Activity 9: Banker's Formula
+
+
+// function calculateInterest(principal, rate, time) {
+//   return (principal * rate * time) / 100; 
+// }
+
+// console.log(calculateInterest(2000, 2, 12))
+
+
+
+// // Activity 10: Guess the Number
+
+function guessNum(userGuess) {
+
+  const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+  if (userGuess === randomNumber) { 
+    console.log("You guessed correctly!");
+  } else if (userGuess < randomNumber) {
+    console.log("Too low!") 
+  } else {
+    console.log("Too high!");
+  }
+};
+
+guessNum(5);
