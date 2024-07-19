@@ -1,0 +1,10 @@
+const car = {
+    make: "Toyota",
+    model: "Corolla",
+    colour: "blue",
+    description: function(){
+        return (`${this.make} ${this.model} in the colour ${this.colour}`)
+    }
+}
+
+console.log(car.description());
