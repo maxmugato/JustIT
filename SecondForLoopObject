@@ -1,0 +1,15 @@
+const car = {
+    make: "Toyota",
+    model: "Corolla",
+    year: 2000,
+    colour: "pink"
+}
+
+for (let key in car){
+    console.log(key + ": " + car[key])
+};
+
+console.log(Object.keys(car));
+console.log(Object.values(car)); 
+console.log(Object.entries(car))
+ 
