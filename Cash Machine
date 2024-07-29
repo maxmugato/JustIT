@@ -1,0 +1,91 @@
+// Cash Machine 2.0 //
+
+// readline-sync //
+var rs = require(`readline-sync`);
+
+// Setting values for Balancem Pin and chances //
+let balance = 10000;
+const pin = "1234";
+let chances = 2;
+
+// Function for introduction //
+function intro() {
+    console.log("Welcome to jsBank");
+    setTimeout(()=> {console.log("Please insert your card");}, 2000);
+    setTimeout(()=> {console.log("Processing...");}, 5000);
+}
+intro();
+
+// function to prompt which service user requires //
+function getService() {
+    console.log("The following services are available.");
+    console.log("1. Check your balance, 2. Withdrawal  3. Exit");
+    rs.setDefaultOptions({limit: ['1', '2', '3']});
+    operation = rs.question("Please choose a service: 1, 2 or 3: ");
+}
+
+// function to check your balance //
+function checkBalance() {
+    console.log(`Your current balance is £${balance}`);
+}
+
+// function to withdraw //
+function takeMoneyOut() {
+    amount = rs.questionInt("Please enter the anount you would like to withdraw: ");
+if (amount <= balance) {
+    balance -= amount;
+    console.log(`£${amount} has been withdrawn from your account`)
+    console.log("Please remove the cash from the machine");
+    console.log(`Your new balance is £${balance}`);
+} else {
+    console.log("You do not have enough funds inyour account. Please try again.");
+// error message for amount greater than the balance //
+    takeMoneyOut(); // Prompt for withdrawal amount //
+    }
+}
+
+// function to Prompt for another service/exit //
+function anotherService() {
+    rs.setDefaultOptions({limit: ['yes', 'no']});
+    confirmation = rs.question("Would you like another service? yes or no: ");
+if (confirmation == 'no') {
+    console.log("Thank you for banking with us...Have a wonderful day!");
+    }
+}
+
+// Function for using the Cash Machine //
+function cashM() {
+console.log("Welcome to jsBank")
+console.log(`Your current balance is ${balance}`);
+do {
+    getService()
+if (operation == 1) {
+    checkBalance();
+} else if (operation == 2) {
+    takeMoneyOut();
+} else if (operation == 3) {
+    console.log("Thank you for banking with us...Have a wonderful day!");
+    break;
+}
+    anotherService(); 
+} while (confirmation == 'yes');
+}
+
+// Incorporating PIN number validation to the Cash Machine //
+function code() {
+    if (chances >= 0) {
+    let pinEntry = rs.questionInt("Please enter your PIN number: ", 
+        {hideEchoBack: true})
+        if (pinEntry == pin) {
+            console.log ("PIN entered successfully");
+            cashM();
+        } else {
+            console.log(`incorrect PIN. ${chances} left`);
+            chances--;
+            code();
+        }
+    } else {
+        console.log("You have been locked out of your account. Please contact your bank");
+    }
+}   
+setTimeout(()=> {code();}, 7000);
