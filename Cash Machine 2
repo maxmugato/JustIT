@@ -1,0 +1,191 @@
+const readlineSync = require('readline-sync');
+
+let pin = 1234;
+let pinTries = 3;
+let amount = 5000;
+
+function cashMachine() {
+    console.log(`
+************************************
+*   Welcome to the Bank of Keira    *
+************************************
+`);
+
+    let choice = readlineSync.question("What can I do to help you today?\n[1] : Check Balance\n[2] : Withdraw funds\n[3] : Change pin\n[4] : Exit\n");
+
+    if (choice == '1') {
+        console.log(`
+*****************************
+* You have chosen to check  *
+*       your balance        *
+*****************************
+`);
+        check();
+    } else if (choice == '2') {
+        console.log(`
+*****************************
+* You have chosen to withdraw money *
+*****************************
+`);
+        withdraw();  
+    } else if (choice == '3') {
+        console.log(`
+*****************************
+* You have decided to change your PIN *
+*****************************
+`);
+        changePin();  
+    } else if (choice == '4') {
+        console.log(`
+*****************************
+*  Thank you for using the  *
+*    Bank of Keira today     *
+*****************************
+`);
+    } else {
+        console.log(`
+*****************************
+* Invalid choice, please    *
+* select option [1], [2],   *
+*     [3] or [4]            *
+*****************************
+`);
+        cashMachine(); // Prompt the user again for a valid input
+    }
+
+    function check() {
+        let pinEntered = readlineSync.question("Please enter your PIN: ");
+
+        if (pinEntered == pin) {
+            console.log(`
+*****************************
+* You have entered the      *
+*       correct PIN         *
+*****************************
+`);
+            console.log(`Your account balance is £${amount}`);
+            let next = readlineSync.question("Would you like to withdraw from your balance? (yes/no): ").toLowerCase();
+            if (next === "yes" || next === "y") {
+                withdraw();
+            } else {
+                console.log(`
+*****************************
+* Thank you for your custom *
+*****************************
+`);
+                cashMachine();
+            }
+        } else {
+            pinTries -= 1;
+            if (pinTries == 0) {
+                console.log(`
+*****************************
+* You have been locked out  *
+* of your account due to    *
+* incorrect pin entries     *
+*****************************
+`);
+            } else {
+                console.log(`
+*****************************
+* Incorrect PIN. You have   *
+* ${pinTries} tries left    *
+*****************************
+`);
+                check();
+            }
+        }
+    }
+
+    function withdraw() {
+        let pinEntered = readlineSync.question("Please enter your PIN: ");
+
+        if (pinEntered == pin) {
+            console.log(`
+*****************************
+* You have entered the      *
+*       correct PIN         *
+*****************************
+`);
+            console.log(`Your balance is currently £${amount}`);
+
+            let withdrawAmount = parseFloat(readlineSync.question("Enter the amount you would like to withdraw: "));
+            if (withdrawAmount > 0 && withdrawAmount <= amount) {
+                amount -= withdrawAmount;
+                console.log(`
+*****************************
+* You have successfully     *
+* withdrawn £${withdrawAmount}    *
+* Your new balance is £${amount} *
+*****************************
+`);
+                cashMachine();
+            } else {
+                console.log(`
+*****************************
+* Insufficient funds        *
+*****************************
+`);
+                cashMachine();
+            }
+        } else {
+            pinTries -= 1;
+            if (pinTries == 0) {
+                console.log(`
+*****************************
+* You have been locked out  *
+* of your account due to    *
+* incorrect pin entries     *
+*****************************
+`);
+            } else {
+                console.log(`
+*****************************
+* Incorrect PIN. You have   *
+* ${pinTries} tries left    *
+*****************************
+`);
+                withdraw();
+            }
+        }
+    }
+
+    function changePin() {
+        let pinEntered = readlineSync.question("Please enter your current PIN: ");
+
+        if (pinEntered == pin) {
+            let newPin = readlineSync.question("Enter your new PIN: ");
+            pin = newPin;
+            console.log(`
+*****************************
+* Your PIN has been         *
+* successfully changed      *
+*****************************
+`);
+            cashMachine();
+        } else {
+            pinTries -= 1;
+            if (pinTries == 0) {
+                console.log(`
+*****************************
+* You have been locked out  *
+* of your account due to    *
+* incorrect pin entries     *
+*****************************
+`);
+            } else {
+                console.log(`
+*****************************
+* Incorrect PIN. You have   *
+* ${pinTries} tries left    *
+*****************************
+`);
+                changePin();
+            }
+        }
+    }
+}
+
+// Run the cash machine function
+cashMachine();
+ 
