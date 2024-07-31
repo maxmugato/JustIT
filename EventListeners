@@ -1,0 +1,61 @@
+// Click event listener
+
+document.getElementById("myButton").addEventListener('click', function() {
+    alert("Button Clicked")
+})
+
+// Double click event listener
+
+document.getElementById("myButton2").addEventListener('dblclick', function(){
+    alert("Button double clicked")
+})
+
+// Mouse over event
+
+// document.getElementById("myDiv").addEventListener("mouseover", function(){
+//     alert("Mouse is over DIV!")
+// })
+
+// Mouse out event
+
+document.getElementById("myDiv").addEventListener("mouseout", function() {
+    console.log("Mouse has evacuated the area!")
+})
+
+// keydown event
+
+// document.addEventListener("keydown", function(event){
+//     alert("You have pressed the key " + event.key)
+// })
+
+//keyup event
+// document.addEventListener("keyup", function(event){
+//     alert("You have released the key " + event.key)
+// })
+
+//on load 
+
+// window.addEventListener('load', function(){ 
+//     alert("Document is loaded")
+// })
+
+// focus event 
+
+document.getElementById("myInput").addEventListener('focus', function(){
+    console.log("Text box is in focus")
+})
+
+// blur event
+
+document.getElementById("myInput").addEventListener('blur', function(){
+    console.log("Text box is no longer in focus")
+})
+
+// change event 
+
+document.
+getElementById("mySelect").addEventListener("change", function() {
+    alert("Selection changed")
+})
+
+ 
