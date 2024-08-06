@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<ul>
+  <li><a class="netflix" href="#Netflix"> Netflix</a></li>
+  <li><a href="#about">Home</a></li>
+  <li><a class="#home" href="#home">Series</a></li>
+  <li><a href="#Films">Films</a></li>
+  <li><a href="#New & Popular">New & Popular</a></li>
+  <li><a href="#My List">My List</a></li>
+</ul>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+  <h2 class="section-title">Trending now</h2>
+
+  <div class="media-container">
+    <div class="media-scroller">
+
+      <!--   Group 1 -->
+      <div class="media-group" id="group-1">
+        <div class="media-element">
+          <img
+            src="Money Heist.webp"
+            alt="">
+        </div>
+        <div class="media-element">
+          <img
+            src="Stranger Things.webp"
+            alt="">
+        </div>
+        <div class="media-element">
+          <img
+            src="Daredevil.jpg"
+            alt="">
+        </div>
+        <div class="media-element">
+          <img
+            src="Punisher.jpg"
+            alt="">
+        </div>
+        <div class="media-element">
+          <img
+            src="Breaking Bad.jpg"
+            alt="">
+        </div>
+
+        <a class="next" href="#group-2" aria-label="next">
+          <svg>
+            <use href="#next"></use>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Group 2   -->
+      <div class="media-group" id="group-2">
+        <a class="previous" href="#group-1">
+          <svg>
+            <use href="#previous"></use>
+          </svg>
+        </a>
+        <div class="media-element">
+          <img
+            src="The Queen's Gambit.jpg"
+            alt="">
+        </div>
+        <div class="media-element">
+          <img
+            src="Velvet Buzzsaw.jpg"
+            alt="">
+        </div>
+        <div class="media-element">
+          <img
+            src="Lucifer.webp"
+            alt="">
+        </div>
+        <div class="media-element">
+          <img
+            src="The Pope's Exorcist.jpg"
+            alt="">
+        </div>
+        <div class="media-element">
+          <img
+            src="Dark.jpg"
+            alt="">
+        </div>
+        <a class="next" href="#group-3" aria-label="next">
+          <svg>
+            <use href="#next"></use>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Group 3   -->
+      <div class="media-group" id="group-3">
+        <a class="previous" href="#group-2">
+          <svg>
+            <use href="#previous"></use>
+          </svg>
+        </a>
+        <div class="media-element">
+          <img
+            src="Supacell.jpg"
+            alt="">
+        </div>
+        <div class="media-element">
+          <img
+            src="Murder.jpg"
+            alt="">
+        </div>
+        <div class="media-element">
+          <img
+            src="The Last Airbender.jpg"
+            alt="">
+        </div>
+        <div class="media-element">
+          <img
+            src="Griselda.jpg"
+            alt="">
+        </div>
+        <div class="media-element">
+          <img
+            src="The Empress.jpg"
+            alt="">
+        </div>
+        <a class="next" href="#group-1" aria-label="next">
+          <svg>
+            <use href="#next"></use>
+          </svg>
+        </a>
+      </div>
+
+    
+
+      <div class="navigation-indicators">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix media carousel CSS only</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+ 
+ 
+    <h2 class="section-title">My List</h2>
+  
+    <div class="media-container">
+      <div class="media-scroller">
+  
+        <!--   Group 1 -->
+        <div class="media-group" id="group-1">
+          <div class="media-element">
+            <img
+              src="Shadow and Bone.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+              src="Narcos.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+              src="Polar.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+              src="Russian Doll.jpg"
+              alt="">
+          </div>
+          <div class="media-element">
+            <img
+              src="The Gray Man.jpg"
+              alt="">
+          </div>
+  
+          <a class="next" href="#group-" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+          </a>
+        </div>
+<!-- Group 2   -->
+<div class="media-group" id="group-2">
+  <a class="previous" href="#group-1">
+    <svg>
+      <use href="#previous"></use>
+    </svg>
+  </a>
+  <div class="media-element">
+    <img
+      src="The Pope's Exorcist.jpg"
+      alt="">
+  </div>
+  <div class="media-element">
+    <img
+      src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
+      alt="">
+  </div>
+  <div class="media-element">
+    <img
+      src="https://images.unsplash.com/photo-1641118961077-440391095cdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
+      alt="">
+  </div>
+  <div class="media-element">
+    <img
+      src="https://images.unsplash.com/photo-1640767014413-b7d27c58b058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
+      alt="">
+  </div>
+  <div class="media-element">
+    <img
+      src="https://images.unsplash.com/photo-1640948612546-3b9e29c23e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
+      alt="">
+  </div>
+  <a class="next" href="#group-3" aria-label="next">
+    <svg>
+      <use href="#next"></use>
+    </svg>
+  </a>
+</div>
+
+
+
+  <svg>
+    <symbol id="next" viewBox="0 0 256 512">
+      <path fill="white"
+        d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+    </symbol>
+
+    <symbol id="previous" viewBox="0 0 256 512">
+      <path fill="white"
+        d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+    </symbol>
+  </svg>
+</body>
+
+
+<style>
+  
+
+  body {
+    background-color: black;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    font-family:Arial, Helvetica, sans-serif
+  }
+  
+  
+  .netflix {
+      color: red;
+      background-color: #000; 
+      font-family: "Bebas Neue" 
+  
+    }
+  
+  </style>
+  
+  </html>
+  
+  
+
+</html>
+
+
+<!--https://www.youtube.com/watch?v=b--q6Fsf_cA-->
