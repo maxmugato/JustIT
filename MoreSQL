@@ -1,0 +1,16 @@
+- ------ PLEASE FIND SOLUTION FOR THESE QUESTIONS -----------
+-- Find minimum salary in the Employee Employee table. Kieran
+SELECT MIN(salary) AS 'Minimum Salary' FROM Employees;
+-- To find the total of all salaries in Employee table. Sumaya
+SELECT sum(salary) FROM Employees;
+-- To find the total of salary for female employees. Nafihu
+SELECT SUM(salary) AS total_female_salary FROM employees
+WHERE gender = 'Female';
+-- To find minimum and maximum salary in Employee table. Tanyel
+SELECT MAX(salary) AS 'Max Salary', MIN(Salary) AS 'Min Salary' FROM employees;
+-- To find the first two employees. Muhammad Djalo
+SELECT * FROM Employees LIMIT 2;
+-- To find the first Name and Last Name for all employee. Yedidya
+select first_name as 'First Name', last_name as 'Last Name' from Employees;
+-- display all employees receive more than 70000 salary. Taiwo
+SELECT * FROM Employees WHERE salary > 70000;
