@@ -1,0 +1,32 @@
+! Tasks
+-- Retrieve  all employees who receive more than 60000 salary;
+SELECT * FROM Employees WHERE Salary>60000;
+-- Retrieve  all male employees who receive less than 30000 salary;
+SELECT * FROM Employees WHERE Salary<30000 AND gender='Male';
+-- Retrieve  all male and female employees who receive more than 30000 salary;
+SELECT * FROM Employees WHERE Salary>30000 AND (gender='Female' OR gender='Male');
+-- Retrieve  all male employees who recieve less than 55000 salary;
+SELECT * FROM Employees WHERE gender='Male' AND Salary<55000;
+-- Retrieve  5 records after the first 10 records.
+SELECT * FROM Employees LIMIT 5 OFFSET 10;
+-- Retrieve  the record of person whose first name is 'Daniel'
+SELECT * FROM Employees WHERE first_name='Daniel';
+-- Retrieve  the record of employee whose first name is Jennifer and last name is Davis
+SELECT * FROM Employees WHERE first_name='Jennifer' AND last_name='Davis';
+-- Retrieve the top 5 highest-paid employees.
+SELECT * FROM Employees ORDER BY salary DESC LIMIT 5;
+-- Retrieve the second highest-paid employee.
+SELECT * FROM Employees ORDER BY salary DESC LIMIT 1 OFFSET 1;
+ 
+-- Retrieve the top 10 employees who earn more than $60,000, ordered by their hire date in ascending order.
+SELECT * FROM Employees WHERE Salary>60000 ORDER BY hire_date ASC LIMIT 10;
+-- Retrieve the employees with salaries between $50,000 and $70,000, ordered by their first name, showing only the first 5 results.
+SELECT * FROM Employees WHERE salary>=50000 AND salary<=70000 ORDER BY first_name LIMIT 5;
+-- Retrieve the 5th to 10th employees (inclusive) in terms of the most recent hire dates.
+SELECT * FROM Employees ORDER BY hire_date DESC LIMIT 6 OFFSET 4;
+-- Retrieve first name, last name, role and salary of highest paid female employee
+SELECT first_name, last_name, role, salary FROM Employees WHERE gender='Female' ORDER BY salary DESC LIMIT 1;
+-- Retrieve the top 3 managers with the highest salaries.
+SELECT * FROM Employees WHERE role='Manager' ORDER BY salary DESC LIMIT 3;
+-- Retrieve the first 5 employees who were hired most recently, excluding the very first one.
+SELECT * FROM Employees ORDER BY hire_date DESC LIMIT 5 OFFSET 1;
