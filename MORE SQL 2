@@ -1,0 +1,16 @@
+-- What is Like Keyword used for in MySQL. Tanyel
+-- Write a query which select all employees which has j as first letter in their first name - Kieran
+SELECT *
+FROM employees
+WHERE first_name LIKE 'J%';
+-- Write a query which select all employees which has h as third letter in their first name and their first name is at least four character in length? Muhammad Djalo
+SELECT * FROM Employees WHERE first_name LIKE '__h_%';
+-- Write a query which display maximum salary for each gender from employee table - 
+SELECT gender, MAX(Salary) FROM employees WHERE gender IS NOT NULL GROUP BY gender;
+-- write a query which select 5,6,7 row from employee table - Johann
+SELECT * FROM Employees LIMIT 3 OFFSET 4;
+-- Write a query which select all employee and sort the record based on from highest salary to lowest salary? Sumaya
+select * from employees order by salary desc;
+-- Write a query which select highest salary for each gender - Jirat
+SELECT gender, MAX(Salary) AS 'Highest Salary' FROM Employees GROUP BY gender;
+ 
