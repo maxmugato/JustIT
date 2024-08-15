@@ -1,0 +1,29 @@
+String functions ------------------
+-- CONCAT()
+SELECT CONCAT(first_name,' ', last_name) AS 'Full Name', salary, gender, role FROM Employees;
+ 
+-- Length
+SELECT LENGTH('Hello');
+ 
+-- UPPER()/UCASE()
+SELECT UPPER('hello');
+SELECT UPPER(CONCAT(first_name,' ',last_name)) AS 'Name' FROM Employees;
+ 
+-- LOWER()/LCASE
+SELECT LCASE('Hello');
+ 
+-- TRIM()
+SELECT TRIM('     Zak      ') AS 'Name';
+ 
+-- FORMAT()
+SELECT FORMAT(1233487575.54858,2);
+ 
+-- Number Methods
+SELECT ROUND(4.899,1);
+ 
+-- TRUNCATE()
+SELECT TRUNCATE(345353454.567,2);
+ 
+-- RAND()
+SELECT FLOOR(RAND()*5)+1;
+ 
