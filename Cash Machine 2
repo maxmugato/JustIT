@@ -7,7 +7,7 @@ let amount = 5000;
 function cashMachine() {
     console.log(`
 ************************************
-*   Welcome to the Bank of Keira    *
+*   Welcome to the Bank of Max    *
 ************************************
 `);
 
