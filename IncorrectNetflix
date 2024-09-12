@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+
+.netflix {
+    color: red;
+    background-color: #000; 
+    font-family: "Bebas Neue" 
+
+  }
+
+  
+
+</style>
+</head>
+<body>
+
+  
+
+<ul>
+  <li><a class="netflix" href="#Netflix"> Netflix</a></li>>
+  <li><a href="#about">About</a></li>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+
+
+  
+</body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="row">
+    <div class="header">
+      <h3 class="title">Title</h3>
+      <div class="progress-bar"></div>
+    </div>
+    <div class="container">
+      <button class="handle left-handle">
+        <div class="text">&#8249;</div>
+      </button>
+      <div class="slider">
+        <img src="The Queen.jpg">
+        <img src="Beverly Luff.webp">
+        <img src="My Name is Vendetta.jpg">
+        <img src="Ice Road.jpg">
+        <img src="Kimmy Schmidt.jpg">
+        <img src="Polar.jpg">
+        <img src="Russian Doll.jpg">
+        <img src="Day Shift.jpg">
+        <img src="The Queen's Gambit.jpg">
+        <img src="Velvet Buzzsaw.jpg">
+        <img src="The Gray Man.jpg">
+        <img src="The Pope's Exorcist.jpg">
+      </div>
+      <button class="handle right-handle">
+        <div class="text">&#8250;</div>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+</html>
